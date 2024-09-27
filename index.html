@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Product Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Project by ritik lipate,rewa kulkarni, soon</h1>
+        <div id="cart">Cart: <span id="cart-count">0</span> items</div>
+        <button onclick="placeOrder()">Place Order</button>
+    </header>
+    <main>
+        <div class="product-container">
+            <div class="product" id="product1">
+                <h2>HAIR TONIC</h2>
+                <div class="glassmorphism">
+                    <img src="hair.jpg" alt="Product 1 Display" />
+                </div>
+                <p>Price: Rs 350/-</p>
+                <button onclick="addToCart(1)">Add to Cart</button>
+            </div>
+            <div class="product" id="product2">
+                <h2>SKIN CREAM</h2>
+                <div class="glassmorphism">
+                    <img src="skin.jpg" alt="Product 2 Display" />
+                </div>
+                <p>Price: Rs 250/-</p>
+                <button onclick="addToCart(2)">Add to Cart</button>
+            </div>
+            <div class="product" id="product3">
+                <h2>PIMPLE CARE</h2>
+                <div class="glassmorphism">
+                    <img src="pimple.jpg" alt="Product 3 Display" />
+                </div>
+                <p>Price: Rs 400/-</p>
+                <button onclick="addToCart(3)">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Product Store. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
